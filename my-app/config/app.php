@@ -52,7 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    /*'url' => env('APP_URL', 'http://localhost'),*/
+    'url' => env('APP_URL', 'https://' . env('CODESPACE_NAME') . '-8000.app.github.dev'),
+'asset_url' => env('ASSET_URL', 'https://' . env('CODESPACE_NAME') . '-8000.app.github.dev'),
 
     /*
     |--------------------------------------------------------------------------
